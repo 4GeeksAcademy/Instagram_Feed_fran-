@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+		<title>Instagram Photo Feed</title>
+	</head>
+	<body>
+		<div class="container-fluid md bg-light">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="d-flex flex-row m-4 align-self-center">
+					<i class="bi bi-instagram p-1 fs-5"></i>
+					<strong class="p-1 ">Instagram</strong>
+					</div>
+				</div>
+				<div class="col-md-4 p-4 d-flex flex-row">
+					<!-- Button trigger modal -->
+						<button type="button" class="btn btn-success m-1 md" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Create a new post
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Create a new post</button></h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								 <form>
+									<div class="mb-3">
+										<label for="recipient-name" class="col-form-label">Caption:</label>
+										<textarea class="form-control" aria-label="With textarea" placeholder="Add the caption of you post here"></textarea>
+									</div>
+									<div class="d-flex justify-content-start">
+										<span class="border p-1 m-1 mb bg-light">
+											<i class="bi bi-camera p-2 fs-5"></i>
+										</span>
+										<span class="border p-1 m-1 mb bg-light">
+											<i class="bi bi-geo-alt-fill p-2 fs-5"></i>
+										</span>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-success">Publish</button>
+							</div>
+
+							</div>
+						</div>
+						</div>
+						<div class="dropdown m-1 md">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="bi bi-gear-fill"></i>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+									<li><a class="dropdown-item" href="#">Profile</a></li>
+									<li><a class="dropdown-item" href="#">Accesibility</a></li>
+									<li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+									<li><hr class="dropdown-divider"></li>
+    								<li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+								</ul>
+						</div>
+						</div>
+
+				</div>
+			</div>
+		</div>
+		<nav class="container-fluid md d-flex justify-content-center nav nav-tabs">
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+					<i class="bi bi-grid-3x3 fs-5"></i>
+				</button>
+				<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="bi bi-square fs-5"></i>
+				</button>
+			</div>	
+		</nav>
+			<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+			  <div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-75 h-75" alt="...">
+					</div>
+					<div class="col-md-4">
+						<img src="https://plus.unsplash.com/premium_photo-1675432656807-216d786dd468?q=80&w=990&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-75 h-75" alt="...">
+					</div>
+					<div class="col-md-4">
+						<img src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-75 h-75" alt="...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-75 h-75" alt="...">
+					</div>
+					<div class="col-md-4">
+						<img src="https://images.unsplash.com/photo-1555169062-013468b47731?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-75 h-75" alt="...">
+					</div>
+					<div class="col-md-4">
+						<img src="https://images.unsplash.com/photo-1529040181623-e04ebc611e25?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-75 h-75" alt="...">
+					</div>
+				</div>
+
+			  </div>
+			</div>
+			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+				  <div class="container-fluid">
+						<div class="row ">
+							<div class="col-md-12 d-flex justify-content-center" >
+								<div class="w-50 h-50">
+									<div class="border md m-4">
+											<div class="d-flex justify-content-between">
+													<div class="m-4">
+													<h2>My crazy Fox Spark!</h2>
+													</div>          
+													<p>08/26</p>
+											</div>
+											<div class="post-body">
+												<img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid max-width: 100%; height: auto;" alt="...">
+											</div>
+											<div class="m-4">
+											<strong>204 Likes</strong>	
+											<p> This is an example  of very good photo that you can post on Instagram </p>
+											</div>
+										</div>
+								</div>
+							</div>
+
+							<div class="col-md d-flex justify-content-center" >
+								<div class="w-50 h-50">
+									<div class="border md m-4">
+											<div class="d-flex justify-content-between">
+													<div class="m-4">
+													<h2>My Beautiful Turtle</h2>
+													</div>          
+													<p>10/56</p>
+											</div>
+											<div class="post-body">
+												<img src="https://plus.unsplash.com/premium_photo-1675432656807-216d786dd468?q=80&w=990&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid max-width: 100%; height: auto;" alt="...">
+											</div>
+											<div class="m-4">
+											<strong>3500 Likes</strong>	
+											<p> Second example of photo that you can post on Instagram </p>
+											</div>
+										</div>
+								</div>
+							</div>
+
+						</div>
+					</div>		
+			</div>
+			</div>
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+	</body>
+</html>
